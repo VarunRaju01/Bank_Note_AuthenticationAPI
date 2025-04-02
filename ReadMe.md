@@ -1,4 +1,4 @@
-Bank Note Authentication API
+##Bank Note Authentication API
 
 Overview
 
