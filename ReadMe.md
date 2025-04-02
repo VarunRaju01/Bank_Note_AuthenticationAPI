@@ -7,10 +7,15 @@ This project provides a FastAPI-based web application that predicts whether a ba
 Project Structure
 
 ├── app.py                # FastAPI application for prediction
+
 ├── BankNotes.py          # (If any) Data model for request validation
+
 ├── trainer.py            # Script to train and save the model
+
 ├── BankNote_Authentication.csv  # Dataset used for training
+
 ├── classifier.pkl        # Saved ML model (Generated after running trainer.py)
+
 ├── README.md             # Project documentation
 
 Requirements
