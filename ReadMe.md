@@ -4,7 +4,7 @@
 
 This project provides a FastAPI-based web application that predicts whether a banknote is real or fake using a trained machine learning model. The model is trained using the RandomForestClassifier and is saved as a pickle file (classifier.pkl).
 
-Project Structure
+## Project Structure
 
 ├── app.py                         # FastAPI application for prediction
 
@@ -18,7 +18,7 @@ Project Structure
 
 ├── README.md                     # Project documentation
 
-Requirements
+## Requirements
 
 Ensure you have the required dependencies installed before running the application.
 
@@ -30,7 +30,7 @@ If you do not have a requirements.txt, manually install the required packages:
 
 pip install fastapi uvicorn numpy pandas scikit-learn
 
-Training the Model
+## Training the Model
 
 To train the model and generate classifier.pkl, run:
 
@@ -46,7 +46,7 @@ Alternatively, use:
 
 uvicorn app:app --reload
 
-API Endpoints
+## API Endpoints
 
 Prediction Route
 
@@ -74,7 +74,7 @@ Example Request:
 
 http://127.0.0.1:8000/predict?variance=2.3&skewness=1.2&curtosis=0.8&entropy=-1.1
 
-Testing the API
+## Testing the API
 
 Once the FastAPI server is running, open a browser and visit:
 
