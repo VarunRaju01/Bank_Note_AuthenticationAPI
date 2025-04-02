@@ -1,9 +1,8 @@
-# Bank Note Authentication API
+Bank Note Authentication API
 
-## Overview
+Overview
 This project provides a FastAPI-based web application that predicts whether a banknote is real or fake using a trained machine learning model. The model is trained using the `RandomForestClassifier` and is saved as a pickle file (`classifier.pkl`).
-
-## Project Structure
+Project Structure
 ```
 ├── app.py                # FastAPI application for prediction
 ├── BankNotes.py          # (If any) Data model for request validation
@@ -13,48 +12,39 @@ This project provides a FastAPI-based web application that predicts whether a ba
 ├── README.md             # Project documentation
 ```
 
-## Requirements
+Requirements
 Ensure you have the required dependencies installed before running the application.
 
 Install the required libraries using:
-```sh
+```
 pip install -r requirements.txt
 ```
 
 If you do not have a `requirements.txt`, manually install the required packages:
-```sh
+```
 pip install fastapi uvicorn numpy pandas scikit-learn
 ```
 
-## Training the Model
+Training the Model
 To train the model and generate `classifier.pkl`, run:
-```sh
+```
 python trainer.py
 ```
 
-## Running the API
+Running the API
 Once the model is trained, run the FastAPI application using:
-```sh
+```
 python app.py
 ```
 
 Alternatively, use:
-```sh
+```
 uvicorn app:app --reload
 ```
 
-## API Endpoints
-### 1. Home Route
-- **URL**: `/`
-- **Method**: GET
-- **Response**:
-  ```json
-  {
-    "message": "Hello, World"
-  }
-  ```
+API Endpoints
 
-### 2. Prediction Route
+1. Prediction Route
 - **URL**: `/predict`
 - **Method**: GET
 - **Parameters**:
