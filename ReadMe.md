@@ -1,6 +1,6 @@
-##Bank Note Authentication API
+## **Bank Note Authentication API**
 
-Overview
+## Overview
 
 This project provides a FastAPI-based web application that predicts whether a banknote is real or fake using a trained machine learning model. The model is trained using the RandomForestClassifier and is saved as a pickle file (classifier.pkl).
 
