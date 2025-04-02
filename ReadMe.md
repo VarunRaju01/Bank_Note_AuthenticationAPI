@@ -43,19 +43,7 @@ uvicorn app:app --reload
 
 API Endpoints
 
-1. Home Route
-
-URL: /
-
-Method: GET
-
-Response:
-
-{
-  "message": "Hello, World"
-}
-
-2. Prediction Route
+Prediction Route
 
 URL: /predict
 
@@ -89,9 +77,7 @@ http://127.0.0.1:8000/docs
 
 This will open an interactive API documentation where you can test the endpoints.
 
-License
 
-This project is licensed under the MIT License.
 
 Feel free to contribute and improve this project!
 
